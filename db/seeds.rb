@@ -5,15 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# puts 'creating group...'
+puts 'creating employees...'
 
-# 20.times do
-#   Group.create(
-#     name = Faker::Name.unique.name,
-#     department = Faker::Job.field,
-#   )
-# end
-# puts 'group created!'
+20.times do
+  Employee.create(
+    name: Faker::Name.unique.name,
+    department: Faker::Job.field,
+  )
+end
+puts 'employees created!'
 
 # names: ['Jane', 'Joe', 'Julie', 'Jessica', 'Jerome', 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ,'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly']
 

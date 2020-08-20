@@ -1,12 +1,13 @@
 class PagesController < ApplicationController
   def about
-    @employees = Group.all
-  end
-
-  def home
+    @groups = Group.all
   end
 
   def new
     @group = Group.new
+  end
+
+  def randomize
+    @random = Group.sample(5)
   end
 end
