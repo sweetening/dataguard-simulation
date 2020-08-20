@@ -10,7 +10,10 @@
 # 20.times do
 #   Group.create(
 #     name = Faker::Name.unique.name,
-#     department = Faker::Job.field
+#     department = Faker::Job.field,
 #   )
 # end
 # puts 'group created!'
+
+# names: ['Jane', 'Joe', 'Julie', 'Jessica', 'Jerome', 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ,'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly']
+
