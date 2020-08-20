@@ -3,11 +3,12 @@
 
   <p>Let's get lunch: press the button below to see which group you'll dine with this Friday!</p>
   <button type="button" class="btn btn-success">Generate Group</button>
+  <p>The logic the button should follow is: ['Jane', 'Joe', 'Julie', 'Jessica', 'Jerome', 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ,'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly'].sample(5)</p>
   <h2>HR</h2>
   <% hr_members = [ 'Jane', 'Joe', 'Julie', 'Jessica', 'Jerome' ] %>
   <ol>
     <% hr_members.each do |member| %>
-      <li><%= member.upcase %></li>
+      <li><%= member.capitalize %></li>
     <% end %>
   </ol>
 
@@ -15,7 +16,7 @@
   <% it_members = [ 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ] %>
   <ol>
     <% it_members.each do |member| %>
-      <li><%= member.upcase %></li>
+      <li><%= member.capitalize %></li>
     <% end %>
   </ol>
 
@@ -23,9 +24,9 @@
   <% intern_members = [ 'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly' ] %>
   <ol>
     <% intern_members.each do |member| %>
-      <li><%= member.upcase %></li>
+      <li><%= member.capitalize %></li>
     <% end %>
   </ol>
-  <% ['Jane', 'Joe', 'Julie', 'Jessica', 'Jerome', 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ,'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly'].sample(5) %>
+  <%  %>
 
 </div>
