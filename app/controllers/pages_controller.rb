@@ -7,5 +7,6 @@ class PagesController < ApplicationController
 
   def new
     @group = Group.new
+    @group.sample(5)
   end
 end
