@@ -1,3 +1,26 @@
 <h1>Dataguard Lunch Groups</h1>
 
 <p>Let's get lunch: press the button below to see which group you'll dine with this Friday!</p>
+<h2>HR</h2>
+<% hr_members = [ 'Jane', 'Joe', 'Julie', 'Jessica', 'Jerome' ] %>
+<ol>
+  <% hr_members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<h2>IT</h2>
+<% it_members = [ 'Doug', 'Dana', 'Dimitri', 'Duane', 'Diane' ] %>
+<ol>
+  <% it_members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<h2>Interns</h2>
+<% intern_members = [ 'Hannah', 'Hank', 'Hildegard', 'Hannes', 'Holly' ] %>
+<ol>
+  <% intern_members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
